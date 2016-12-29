@@ -1,0 +1,112 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="">
+	<title>{{title}}</title>
+	<link href="vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<!--[if lt IE 10]>
+       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+     <![endif]-->
+     <nav class="navbar" role="navigation">
+         <div class="col-md-12">
+             <div class="navbar-header">
+                 <span class="navbar-brand" id="navHeader" data-toggle="tooltip" title="-To-Do-" data-placement="bottom">{{title}}</span>
+             </div>
+             <div class="container">
+                 <a href='https://github.com/chitrank2050?tab=repositories' target="_blank"><i class="fa fa-github-alt fa-2x fa-fw"></i></a>
+                 <a href='https://www.facebook.com/chitrank007' target="_blank"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+                 <a href='https://plus.google.com/102046674547008202139/about' target="_blank"><i class="fa fa-google fa-2x fa-fw"></i></a>
+                 <a href='https://twitter.com/chitrank2050' target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+                 <a href='https://in.linkedin.com/in/chitrank-agnihotri-63700a87' target="_blank"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+                 </span>
+             </div>
+         </div>
+         <!-- /.navbar -->
+     </nav>
+     <div class="row">
+     	<div class="container-fluid">
+     		<div class="jumbotron">
+     			 <h1 class="fontBold">Learning the {{ title }}</h1>
+   				 <p class="fontBold">The Practice RESTful API by <span class="fontLob">{{author}}</span>...oh snap</p>
+   				 <h3 class="fontBold works">How it Works</h3>
+   				 <ul class="fontRoboto">
+   				 	<li>Get any collection or a list of items at /api/:user/:collection <a class="liUnderline" href="{{demo}}">{{demo}}</a> (pick any username and collection name)</li>
+   				 	<li>Get a specific item by /api/:user/:collection/:id <a class="liUnderline" href="{{demo}}/1">{{demo}}/1</a> </li>
+   				 	<li>Post a new item {name:'Flash'} to /api/:user/:collection <a class="liUnderline" href="{{demo}}/1">{{demo}}/1</a>(pick any username and collection name) </li>
+   				 	<li>What? How did it know my username and collections existed? if a collection doesn't exist it will create a blank collection for you.</li>
+   				 	<li>What's the catch? <h3 class="fontBold">1)All data will reset after sometime 2)Anybody can modify anything...this ain't for your production app.</h3></li>
+   				 </ul>
+   				 <div class="col-md-12 code">
+   				 	<h3 class="fontBold">What Should my Javascript code look like?</h3>
+   				 	<ul>
+				      <li>
+				        <h3>Get a collection: GET /api/:user/:collection</h3>
+				         <pre>
+$.ajax({
+  type: 'GET',
+  url: 'http://rest.learncode.academy{{demo}}',
+  success: function(data) {
+    console.log("The data:", data);
+  }
+});</pre>
+				      </li>
+				      <li>
+				        <h3>Add a new item: POST /api/:user/:collection</h3>
+				        <pre>
+$.ajax({
+  type: 'POST',
+  url: 'http://rest.learncode.academy/api/johnbob/friends',
+  data: {name: 'Superman', age: 270},
+  success: function(data) {
+    console.log("Superman added!", data);
+  }
+});</pre>
+				      </li>
+				      <li>
+				        <h3>Get a single item: GET /api/:user/:collection/:id</h3>
+				        <pre>
+$.ajax({
+  type: 'GET',
+  url: 'http://rest.learncode.academy{{demo}}/1',
+  success: function(data) {
+    console.log("Here's the item!", data);
+  }
+});</pre>
+				      </li>
+				      <li>
+				        <h3>Update an item with new data: PUT /api/:user/:collection/:id</h3>
+				        <pre>
+$.ajax({
+  type: 'PUT',
+  data: {name: 'Iron Man', age: 42},
+  url: 'http://rest.learncode.academy{{demo}}/1',
+  success: function() {
+    //no data...just a success (200) status code
+    console.log('Updated Successfully!');
+  }
+});</pre>
+				      </li>
+				      <li>
+				        <h3>Delete an item: DELETE /api/:user/:collection/:id</h3>
+				        <pre>
+$.ajax({
+  type: 'DELETE',
+  url: 'http://rest.learncode.academy{{demo}}/1',
+  success: function() {
+    //no data...just a success (200) status code
+    console.log('Deleted Successfully!');
+  }
+});</pre>
+				      </li>
+    </ul>
+   				 </div>
+     		</div>
+		</div>
+	</div>
+  </body>
+</html>

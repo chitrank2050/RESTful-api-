@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,680);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+  overflow-x: hidden;
+  background: #E2E2E2;
+  color: #474f51;
+  font-size: 13.5pt;
+  font-family: 'Yanone Kaffeesatz';
+  line-height: 1.85em;
+  font-weight: 300;
+}
+.jumbotron
+{
+    height: 30vh;
+}
+/*--- Navbar----*/
+.fa-github-alt {
+    color: #4099ff;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-google {
+    color: #e52d27;
+}
+
+.fa-twitter {
+    color: #f60;
+}
+
+.fa-linkedin {
+    color: #6441a5;
+}
+
+.fa {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: .7;
+}
+
+.fa:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 1;
+}
+.navbar-brand{
+    font-size: 150%;
+    margin-top: 5px;
+}
+nav div .container
+{
+  margin-top: 15px;
+}
+/*! NAVBAR */
+
+.fontBold {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.fontLob {
+    font-family: 'Lobster', cursive;
+}
+.works
+{
+    margin-top:25px;
+}
+.fontRoboto
+{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    margin-top: 3px;
+    list-style: none;
+}
+.fontRoboto li:before {
+    content: "•";
+    font-size: 200%;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+.liUnderline
+{
+    color:purple;
+    text-decoration:underline;
+}
+.liUnderline:hover
+{
+    color:purple;
+    text-decoration:none;
+}
+.code pre {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    font-size: 90%;
+    border: 0px;
+    line-height: 110%;
+    color: #434FC3;
+    word-wrap: break-word;
+}
