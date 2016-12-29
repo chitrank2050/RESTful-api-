@@ -62,6 +62,10 @@ The Practice RESTful api by chitrank agnihotri
 #Run 
 	1. npm install (to install all the depencies)
 	2. npm start (to start a local server at port 3000 and run the project)
+#live Demo
+https://restful-api-.herokuapp.com/
+
+#Screenshots
 
 #Download
 	Download via Zip or type git clone https://github.com/chitrank2050/RESTful-api-.git
