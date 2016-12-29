@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/api', users);
 
-mongoose.connect('mongodb://localhost/myApi');
+mongoose.connect('mongodb://chitranke:123456@ds145118.mlab.com:45118/chitrank');
 
 
 // catch 404 and forward to error handler
