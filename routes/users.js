@@ -46,7 +46,7 @@ router.put('/:user/:collection/:id',(req,res,next)=>{
 		 if (err) {
 		 	return res.send(500, { error: err });
 		 }
-	 	else res.send("Update Successful");
+	 	else res.send("-------- Update Successful ---------");
   });
 });
 
@@ -57,15 +57,15 @@ router.post('/:user/:collection',(req,res,next)=>{
 	var api=mongoose.model('mModel',collectionName);
 	var task=new api(data);
 	task.save();
-	res.status("POST Successful").json(data);
-	console.log("POST successful");
+	res.json(data);
+	console.log("------- POST Successful-------");
 });
 
 /*DELETE an item*/
 router.delete('/:user/:collection/:id',(req,res,next)=>{
 	var collectionName=req.params.user+'.'+req.params.collection;
  	mongoose.model('mModel',collectionName).findById(req.params.id).remove().exec();
- 	res.send("Successful Delete");
+ 	res.send("----------------- Successful Delete ---------------");
 
 });
 
