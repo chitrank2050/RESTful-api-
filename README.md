@@ -66,6 +66,24 @@ The Practice RESTful api by chitrank agnihotri
 https://restful-api-.herokuapp.com/
 
 #Screenshots
+1.Landing page
+  ![1](https://cloud.githubusercontent.com/assets/13078364/21538882/8c8168c0-cdc7-11e6-9693-d393426ceb18.png)
+
+2.Get all elements
+  ![2](https://cloud.githubusercontent.com/assets/13078364/21538884/8d2f0a52-cdc7-11e6-8d4a-e331e346ecc8.png)
+
+3.POST the data
+  ![3](https://cloud.githubusercontent.com/assets/13078364/21538883/8c8d9488-cdc7-11e6-9647-201faa410f0d.png)
+
+4.Get element by ID
+  ![4](https://cloud.githubusercontent.com/assets/13078364/21538885/8e62d7a0-cdc7-11e6-8c51-16673dc676b1.png)
+
+5.Delete an element
+  ![5](https://cloud.githubusercontent.com/assets/13078364/21539007/8ada3dac-cdc8-11e6-8364-daaf06605cdd.png)
+
+6.Update an element
+  ![6](https://cloud.githubusercontent.com/assets/13078364/21539008/8afe363a-cdc8-11e6-96aa-81f2e80d5f18.png)
+  ![7](https://cloud.githubusercontent.com/assets/13078364/21539006/8ad93be6-cdc8-11e6-942b-9403f88eb147.png)
 
 #Download
 	Download via Zip or type git clone https://github.com/chitrank2050/RESTful-api-.git
