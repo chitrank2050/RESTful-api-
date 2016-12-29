@@ -57,7 +57,7 @@ router.post('/:user/:collection',(req,res,next)=>{
 	var api=mongoose.model('mModel',collectionName);
 	var task=new api(data);
 	task.save();
-	res.json(data);
+	res.status("POST Successful").json(data);
 	console.log("POST successful");
 });
 
