@@ -67,4 +67,4 @@ The Practice RESTful api by chitrank agnihotri
 	Download via Zip or type git clone https://github.com/chitrank2050/RESTful-api-.git
 
 #About
-	http://chitrankagnihotri.com
+http://chitrankagnihotri.com
