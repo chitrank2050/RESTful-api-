@@ -36,7 +36,7 @@
    				 <h3 class="fontBold works">How it Works</h3>
    				 <ul class="fontRoboto">
    				 	<li>Get any collection or a list of items at /api/:user/:collection <a class="liUnderline" href="{{demo}}">{{demo}}</a> (pick any username and collection name)</li>
-   				 	<li>Get a specific item by /api/:user/:collection/:id <a class="liUnderline" href="{{demo}}/1">{{demo}}/1</a> </li>
+   				 	<li>Get a specific item by /api/:user/:collection/:id <a class="liUnderline" href="{{link}}/1">{{demo}}/1</a> </li>
    				 	<li>Post a new item {name:'Flash'} to /api/:user/:collection <a class="liUnderline" href="{{demo}}/1">{{demo}}/1</a>(pick any username and collection name) </li>
    				 	<li>What? How did it know my username and collections existed? if a collection doesn't exist it will create a blank collection for you.</li>
    				 	<li>What's the catch? <h3 class="fontBold">1)All data will reset after sometime 2)Anybody can modify anything...this ain't for your production app.</h3></li>
@@ -49,7 +49,7 @@
 				         <pre>
 $.ajax({
   type: 'GET',
-  url: 'http://restful-api-.herokuapp.com{{demo}}',
+  url: 'http://restful-api-.herokuapp.  com{{demo}}',
   success: function(data) {
     console.log("The data:", data);
   }
@@ -60,7 +60,7 @@ $.ajax({
 				        <pre>
 $.ajax({
   type: 'POST',
-  url: 'http://restful-api-.herokuapp.com/api/johnbob/friends',
+  url: 'http://restful-api-.herokuapp.  com/api/johnbob/friends',
   data: {name: 'Superman', age: 270},
   success: function(data) {
     console.log("Superman added!", data);
@@ -72,7 +72,7 @@ $.ajax({
 				        <pre>
 $.ajax({
   type: 'GET',
-  url: 'http://restful-api-.herokuapp.com{{demo}}/1',
+  url: 'http://restful-api-.herokuapp.  com{{demo}}/1',
   success: function(data) {
     console.log("Here's the item!", data);
   }
@@ -84,7 +84,7 @@ $.ajax({
 $.ajax({
   type: 'PUT',
   data: {name: 'Iron Man', age: 42},
-  url: 'http://restful-api-.herokuapp.com{{demo}}/1',
+  url: 'http://restful-api-.herokuapp.  com{{demo}}/1',
   success: function() {
     //no data...just a success (200) status code
     console.log('Updated Successfully!');
@@ -96,7 +96,7 @@ $.ajax({
 				        <pre>
 $.ajax({
   type: 'DELETE',
-  url: 'http://restful-api-.herokuapp.com{{demo}}/1',
+  url: 'http://restful-api-.herokuapp.  com{{demo}}/1',
   success: function() {
     //no data...just a success (200) status code
     console.log('Deleted Successfully!');
