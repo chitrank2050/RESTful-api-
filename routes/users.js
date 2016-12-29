@@ -57,7 +57,7 @@ router.post('/:user/:collection',(req,res,next)=>{
 	var api=mongoose.model('mModel',collectionName);
 	var task=new api(data);
 	task.save();
-	res.send(Successful);
+	res.json("Successful",data);
 });
 
 /*DELETE an item*/
